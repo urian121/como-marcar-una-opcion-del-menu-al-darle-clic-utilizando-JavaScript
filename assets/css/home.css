@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f4f8;
+}
+.center {
+    text-align: center;
+}
+.active {
+    color: red;
+}
