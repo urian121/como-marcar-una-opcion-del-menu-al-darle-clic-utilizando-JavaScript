@@ -1,8 +1,10 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
-}
+  }
 body {
     font-family: 'Roboto Slab', serif;
     background-color: #eee;
@@ -13,7 +15,15 @@ body {
   }
 .center {
     text-align: center;
+    margin-top: 100px;
+}
+.logoJavaScript{
+  width: 250px;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
 }
 .active {
-    color: red;
+    color:crimson;
+    border-bottom: 5px solid  #222;
 }
