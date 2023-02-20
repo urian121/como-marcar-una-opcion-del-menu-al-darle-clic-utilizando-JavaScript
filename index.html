@@ -6,18 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cómo saber si un elemento HTML está presente en el DOM</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
 </head>
 
 <body>
-    <ul class="menu">
-        <li class="menu-item" id="opcion1">Opción 1</li>
-        <li class="menu-item" id="opcion2">Opción 2</li>
-        <li class="menu-item" id="opcion3">Opción 3</li>
-    </ul>
-
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="togglebtn">
+    <i class="fa fa-bars"></i>
+  </label>
+  <label class="logo">
+    <img src="./assets/img/logo.png" class="imgLogo" alt="logo">
+  </label>
+  <ul class="menu">
+    <li><a class="menu-item"  id="option1" href="#">Home</a></li>
+    <li><a class="menu-item"  id="option2" href="#">About</a></li>
+    <li><a class="menu-item"  id="option3" href="#">Services</a></li>
+    <li><a class="menu-item"  id="option4" href="#">Portfolio</a></li>
+    <li><a class="menu-item"  id="option5" href="#">Contact</a></li>
+  </ul>
+</nav>
 
 
     <script src="./assets/js/app.js"></script>

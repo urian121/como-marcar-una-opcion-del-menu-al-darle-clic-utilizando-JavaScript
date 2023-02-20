@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+nav {
+  background-color: #fff !important;
+  color: #222;
+  box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%), 0 8px 64px 0 rgb(10 14 29 / 8%);
+  box-shadow: 0px 15px 60px rgb(62 62 62 / 10%) !important;
+  box-shadow: 0 0 1px 1px rgb(29 17 51 / 4%), 0 0 3px 2px rgb(9 32 77 / 12%),
+    0 0 2px -3px rgb(29 17 51 / 12%);
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+    line-height: 125px;
+    padding: 29px 50px;
+}
+.imgLogo{
+    width: 130px;
+}
+nav ul {
+  float: right;
+  margin-right: 50px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 8px;
+}
+nav ul li a {
+  color: #222;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  border-bottom: 1px solid #cecece;
+  transition: 0.3s;
+}
+.togglebtn {
+  color: #222;
+  float: right;
+  line-height: 80px;
+  font-size: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 858px) {
+  .togglebtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    top: 80px;
+    text-align: center;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 25px;
+  }
+  nav ul li a:hover {
+    color: #222;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}

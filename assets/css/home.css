@@ -1,12 +1,16 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f2f4f8;
-}
+    font-family: 'Roboto Slab', serif;
+    background-color: #eee;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
 .center {
     text-align: center;
 }
