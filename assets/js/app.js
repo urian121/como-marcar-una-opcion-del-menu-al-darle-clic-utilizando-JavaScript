@@ -1,15 +1,17 @@
-// Obtiene una lista de todos los elementos del menú
+// Obtenemos una lista de todos los elementos del menú
 let menuItems = document.querySelectorAll('.menu-item');
+console.log(menuItems);
 
-// Agrega un controlador de eventos de clic a cada elemento del menú
+// Agregamos un controlador de eventos de clic a cada elemento del menú
 menuItems.forEach((item)=> {
   item.addEventListener('click', function() {
+    console.log('clic ', item);
 
     /**
      * Recorro todos los links, y elimino la clase "active" que este en
      * cualquier otro elemento del menú
     */
-    menuItems.forEach(function(item) {
+    menuItems.forEach((item)=>{
       item.classList.remove('active');
     });
 
